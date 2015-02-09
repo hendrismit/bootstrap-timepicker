@@ -47,6 +47,10 @@
           this.$element.parent('.input-group').find('.input-group-addon').on({
             'click.timepicker': $.proxy(this.showWidget, this)
           });
+        } else if (this.$element.parent('.input-group').find('.input-group-btn').length) {
+          this.$element.parent('.input-group').find('.input-group-btn').on({
+            'click.timepicker': $.proxy(this.showWidget, this)
+          });
         } else {
           this.$element.closest(this.containerClass).find('.input-group-addon').on({
             'click.timepicker': $.proxy(this.showWidget, this)
