@@ -635,10 +635,6 @@
       var width = this.component ? this.component.outerWidth(true) : this.$element.outerWidth(false);
       var left = offset.left, top = offset.top;
 
-      console.log(height);
-      console.log(windowHeight);
-      console.log(widgetHeight);
-
       this.$widget.removeClass('timepicker-orient-top timepicker-orient-bottom timepicker-orient-right timepicker-orient-left');
 
       if (this.orientation.x !== 'auto') {
