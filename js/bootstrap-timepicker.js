@@ -622,14 +622,14 @@
         return ;
       }
 
-      var widgetWidth = this.$widget.outerWidth(); 
+      var widgetWidth = this.$widget.outerWidth();
       var widgetHeight = this.$widget.outerHeight();
       var visualPadding = 10;
       var windowWidth = $(window).width();
       var windowHeight = $(window).height();
       var scrollTop = $(window).scrollTop();
 
-      var zIndex = parseInt(this.$element.parents().filter(function() {}).first().css('z-index'), 10) + 10;
+      var zIndex = parseInt(this.$element.parents().filter(function() { return $(this).css('z-index') !== 'auto'; }).first().css('z-index')) + 10;
       var offset = this.component ? this.component.parent().offset() : this.$element.offset();
       var height = this.component ? this.component.outerHeight(true) : this.$element.outerHeight(false);
       var width = this.component ? this.component.outerWidth(true) : this.$element.outerWidth(false);
