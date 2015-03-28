@@ -1,7 +1,7 @@
 *.swp
+_site/
 .grunt
-_site
 node_modules
+gruntfile.js
+_site
 _SpecRunner.html
-spec/js/libs
-.c9revisions
