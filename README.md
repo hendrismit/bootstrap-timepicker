@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-Timepicker for Twitter Bootstrap 3
-fork of https://github.com/jdewit/bootstrap-timepicker
-=====================
 =======
 Timepicker for Twitter Bootstrap 3.x
 =======
@@ -20,5 +16,3 @@ A: When the timepicker field has to be loaded inside some modal dialog content, 
     template: 'modal',
   });
   ````
-  
->>>>>>> upstream/master
